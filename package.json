@@ -4,14 +4,14 @@
   "description": "run browser tests within an emulated DOM ",
   "main": "index.js",
   "bin": {
-    "jsdom-tape": "bin/cli.js"
+    "jsdom-runner": "bin/cli.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/krazylek/jsdom-tape.git"
+    "url": "git+https://github.com/krazylek/jsdom-runner.git"
   },
   "keywords": [
     "test",
@@ -23,9 +23,9 @@
   "author": "krazylek (http://pohl.fr)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/krazylek/jsdom-tape/issues"
+    "url": "https://github.com/krazylek/jsdom-runner/issues"
   },
-  "homepage": "https://github.com/krazylek/jsdom-tape#readme",
+  "homepage": "https://github.com/krazylek/jsdom-runner#readme",
   "dependencies": {
     "concat-stream": "^1.6.0",
     "create-html": "^3.1.0",
