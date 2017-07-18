@@ -13,9 +13,6 @@ The output depends on your test library: browser `console` is redirected to Node
 For example [Tape](https://github.com/substack/tape) write to stderr.
 So any test library or script writing to the console should work.
 
-### Cli options
-
-...
 
 ### Example
 
@@ -38,7 +35,17 @@ browserify test/test.js | jsdom-runner
 
 ## API
 
-...
+```js
+var runner = require('jsdom-runner')
+```
+
+### runner(pageOptions, jsdomOptions)
+
+Returns a writable stream. Pipe your js code into it.
+
+* `pageOptions`: options for `create-html` module, documentation is [here](https://github.com/sethvincent/create-html#createhtmloptions)
+* `jsdomOptions`: options for jsdom instance, documentation is [here](https://github.com/tmpvar/jsdom#customizing-jsdom)
+
 
 ## Install
 
