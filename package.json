@@ -1,6 +1,6 @@
 {
   "name": "jsdom-runner",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "run browser tests within an emulated DOM ",
   "main": "index.js",
   "bin": {
