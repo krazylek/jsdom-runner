@@ -1,17 +1,15 @@
 # jsdom-runner
 
-run browser tests within an emulated DOM
+run browser tests or scripts within an emulated DOM
 
 
 ## Usage
 
-jsdom-runner take a stream as an input and write to standard outputs.
-The input stream should be a js script to run in a browser env.
+This library is intended to run any script from NodeJs inside an emulated DOM provided by [jsdom](https://github.com/tmpvar/jsdom).
+Script is read from standard input and results are displayed to standard output or standard error by connecting the `jsdom` console to NodeJs console.
 
-The output depends on your test library: browser `console` is redirected to Node `console`console.
-
-For example [Tape](https://github.com/substack/tape) write to stderr.
-So any test library or script writing to the console should work.
+For example [Tape](https://github.com/substack/tape) results are directed to stdout.
+Any test library or script writing to the console should work.
 
 
 ### Example
@@ -30,7 +28,7 @@ test('demo', function (t) {
 Then build it and run the test:
 
 ```
-browserify test/test.js | jsdom-runner
+browserify test.js | jsdom-runner
 ```
 
 ## API
